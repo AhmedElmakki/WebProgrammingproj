@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, #b39ddb, #8e44ad);
+            color: white;
+            text-align: center;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            width: 100%;
+            text-align: left;
+            background: linear-gradient(to right, #333333, #555555);
+            color: white;
+            padding: 50px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .header .button-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+        .header button {
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .header button:hover {
+            background-color: #7d3c94;
+        }
+        .main-content {
+            text-align: left;
+            padding: 50px 40px;
+            color: white;
+            width: 80%;
+            margin-top: 100px;
+        }
+        .main-content h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .main-content h2 {
+            font-size: 60px;
+            margin-bottom: 30px; 
+        }
+        .main-content p {
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 30px; 
+        }
+        .form-container {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #7d3c94;
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, #b39ddb, #8e44ad);
+            color: white;
+            text-align: center;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            width: 100%;
+            text-align: left;
+            background: linear-gradient(to right, #333333, #555555);
+            color: white;
+            padding: 50px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .header .button-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+        .header button {
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .header button:hover {
+            background-color: #7d3c94;
+        }
+        .main-content {
+            text-align: left;
+            padding: 50px 40px;
+            color: white;
+            width: 80%;
+            margin-top: 100px;
+        }
+        .main-content h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .main-content h2 {
+            font-size: 60px;
+            margin-bottom: 30px; 
+        }
+        .main-content p {
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 30px; 
+        }
+        .form-container {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #7d3c94;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Student Management System</div>
+    </div>
+
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <h2>We'd love to hear from you!</h2>
+        <p>If you have any questions or suggestions, feel free to reach out to us using the form below:</p>
+
+        <div class="form-container">
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Scroll effect for the header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
