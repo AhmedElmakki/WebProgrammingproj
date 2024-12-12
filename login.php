@@ -145,7 +145,7 @@ $conn->close();
 <body>
     <div class="header">
         <div>Student Management System</div>
-        <button class="contact-button" onclick="window.location.href='contact.html'">Contact Us</button>
+        <button class="contact-button" onclick="window.location.href='contactUs.html'">Contact Us</button>
     </div>
 
     <!-- Login Form -->

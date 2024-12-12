@@ -52,7 +52,7 @@ if (!isset($_SESSION['user_id'])) {
         .header .button-container {
             display: flex;
             justify-content: flex-end;
-            gap: 15px; /* Space between buttons */
+            gap: 15px;
         }
         .header button {
             padding: 10px 20px;
@@ -84,6 +84,34 @@ if (!isset($_SESSION['user_id'])) {
             font-size: 28px; 
             line-height: 1.5;
         }
+        .bottom-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #4a148c;
+        }
+        .bottom-section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            overflow-x: auto;
+        }
+        .slider-container img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .slider-container img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -105,6 +133,28 @@ if (!isset($_SESSION['user_id'])) {
         <p>Easily manage and view student records securely.</p>
     </div>
 
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <h3>Explore More Features</h3>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls width="600">
+                <source src="media/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Image Slider -->
+        <div class="slider-container">
+            <img src="media/image1.jpg" alt="Image 1">
+            <img src="media/image2.jpg" alt="Image 2">
+            <img src="media/image3.jpg" alt="Image 3">
+            <img src="media/image4.jpg" alt="Image 4">
+        </div>
+    </div>
+
+
     <script>
         // Scroll effect for the header
         const header = document.getElementById('header');
@@ -119,3 +169,6 @@ if (!isset($_SESSION['user_id'])) {
 
 </body>
 </html>
+
+
+
